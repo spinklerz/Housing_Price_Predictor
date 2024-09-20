@@ -75,6 +75,17 @@ Here is a run down of each model:
 * Standard Gradient Descent as optimzer
 * No Change in Learning Rate
 * Using MAE
+  
+#### Results 
+
+- Training MAE for Min-Max Scaled Data : mae: 194457.1719
+- Training MAE for Standardized Scaled Data : mae: 194476.5000
+
+- Validation MAE for Min-Max Scaled Data: 191280.67695726274
+- Validation MAE for Standardized Scaled Data: 191301.12178081108
+
+- Test MAE for Min-Max Scaled Data: 187720.60654641766
+- Test MAE for Standardized Scaled Data: 187741.38188078767
 
 #### Model 2
 * 3 Hidden Layers
@@ -83,6 +94,17 @@ Here is a run down of each model:
 * Use Activation Function ReLu
 * Optimizer Adam
 * Learning Rate Adjusted to 0.001
+
+#### Results
+
+- Training MAE for Min-Max Scaled Data : mae: 46323.7383
+- Training MAE for Standardized Scaled Data : mae: 42375.3359
+
+- Validation RMSE for Min-Max Scaled Data: 46989.847933260535
+- Validation RMSE for Standardized Scaled Data: 44319.95090891572
+
+- Test MAE for Min-Max Scaled Data: 45810.39243344907
+- Test MAEfor Standardized Scaled Data: 41427.358076935445
   
 #### Model 3
 * 5 hidden Layers
@@ -91,3 +113,25 @@ Here is a run down of each model:
 * Use Activation Function Leaky ReLu
 * Optimizer Adam
 * Learning Rate Adjusted to 0.01
+
+#### Results
+
+- Training MAE for Min-Max Scaled Data : mae: 39163.6992
+
+- Training MAE for Standardized Scaled Data : mae: 39061.6719
+  
+
+- Validation MAE for Min-Max Scaled Data: 84953.98381294963
+
+- Validation MAE for Standardized Scaled Data: 41837.573873490495
+  
+
+- Test MAE for Min-Max Scaled Data: 82049.51392505786
+
+- Test MAE for Standardized Scaled Data: 38149.44042767811
+
+
+### Conclusions
+- Through out the test set, validation set, and training set generally Standard scaling performed better but noticed that compared to Min Max scaling the change in MAE between epochs would be less generally then Standard scaling. So using Min max scaling may give more control over loss between epochs.
+- In Conclusion Model 3 performed best while being standardized. But the fact Model 3 performed well when standardized suggests we may need more rigours models. But interestingly our Min-Max scaled data for model 3 indicates overfitting. 
+

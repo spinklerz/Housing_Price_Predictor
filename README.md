@@ -61,13 +61,13 @@ In this project the following techniques were used:
 
 ### Conclusions 
 
-- The only relationship that stands out is the "housing_median_value" vs "median_income". Looking at the scatterplot it may not be immediatly obvious but there is a positive correlation between these two values. To verify this relationship I have also visalued a heat map, which proves that the relationship between these two are positive with a value of 0.69. This intuitively makes sense, as the income in that district increases so do the prices of housing.
+- The only relationship that stands out is the "housing_median_value" vs "median_income". Looking at the scatterplot it may not be immediately obvious but there is a positive correlation between these two values. To verify this relationship I have also visualized a heat map, which proves that the relationship between these two are positive with a value of 0.69. This intuitively makes sense, as the income in that district increases so do the prices of housing.
   
-- This is intersting to look at, intuitively housing prices are more expensive near the coast, from what looks like to be Los Angeles and San Fransico. And we can clearly see how densly packed these locations are. The combination of population density and location in these areas could provide significant data when training our predictive model
+- This is interesting to look at, intuitively housing prices are more expensive near the coast, from what looks like to be Los Angeles and San Fransico. And we can clearly see how densly packed these locations are. The combination of population density and location in these areas could provide significant data when training our predictive model
 
 ## 5.) Model Training 
 - I used 3 models each increasing in complexity using Min-Max scaling and Standardization as scaling metrics
-- and used MAE as an evalution metric
+- and used MAE as an evaluation metric
 Here is a run down of each model:
 
 #### Model 1

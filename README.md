@@ -20,8 +20,7 @@ In this project the following techniques were used:
 - python
   
 ## 1.) Data Extraction 
-- Downloaded the data set locally
-- and imported the data using pandas
+- The dataset was downloaded locally and imported using pandas.
 
 ## 2.) EDA (Exploratory Data Analysis)
 - Performed operations:

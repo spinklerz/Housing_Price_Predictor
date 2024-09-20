@@ -46,7 +46,7 @@ In this project the following techniques were used:
 ## 3.) Data Processing 
 - We one hot encoded categorical feature ocean_proximity( we had to turn this into integer values due to tensorflows built in one hot encoder not taking categorical values, later I learned just to use pd.get_dummies or sklearn.OneHotEncoder)
 - Decided to discard the capped values which was about 4% of the data set 
-- Created feaures: 
+- Created features: 
   * Total rooms per Household
   * Total bedrooms per Household
   * Population per Household
@@ -60,7 +60,7 @@ In this project the following techniques were used:
 
 ### Conclusions 
 
-- The only relationship that stands out is the "housing_median_value" vs "median_income". Looking at the scatterplot it may not be immediatly obivous but there is a positive correlation between these two values. To verify this relationship I have also visalued a heat map, which proves that the relationship between these two are positive with a value of 0.69. This intuativley makes sense, as the income in that disctrict increases so do the prices of housing.
+- The only relationship that stands out is the "housing_median_value" vs "median_income". Looking at the scatterplot it may not be immediatly obvious but there is a positive correlation between these two values. To verify this relationship I have also visalued a heat map, which proves that the relationship between these two are positive with a value of 0.69. This intuitively makes sense, as the income in that district increases so do the prices of housing.
   
 - This is intersting to look at, intuitively housing prices are more expensive near the coast, from what looks like to be Los Angeles and San Fransico. And we can clearly see how densly packed these locations are. The combination of population density and location in these areas could provide significant data when training our predictive model
 
@@ -133,5 +133,5 @@ Here is a run down of each model:
 
 ### Conclusions
 - Through out the test set, validation set, and training set generally Standard scaling performed better but noticed that compared to Min Max scaling the change in MAE between epochs would be less generally then Standard scaling. So using Min max scaling may give more control over loss between epochs.
-- In Conclusion Model 3 performed best while being standardized. But the fact Model 3 performed well when standardized suggests we may need more rigours models. But interestingly our Min-Max scaled data for model 3 indicates overfitting. 
+- In Conclusion Model 3 performed best while being standardized. But the fact Model 3 performed well when standardized suggests we may need more rigorous models. But interestingly our Min-Max scaled data for model 3 indicates overfitting. 
 

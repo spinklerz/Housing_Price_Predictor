@@ -21,6 +21,7 @@ In this project the following techniques were used:
   
 ## 1.) Data Extraction 
 - The dataset was downloaded locally and imported using pandas.
+- Initial Dimensions: 20640 rows × 10 columns
 
 ## 2.) EDA (Exploratory Data Analysis)
 - Performed operations:
@@ -44,11 +45,12 @@ In this project the following techniques were used:
       
 ## 3.) Data Processing 
 - We one hot encoded categorical feature ocean_proximity( we had to turn this into integer values due to tensorflows built in one hot encoder not taking categorical values, later I learned just to use pd.get_dummies or sklearn.OneHotEncoder)
-- Decided to discard the capped values which was about 4% of the data set 
+- Decided to discard the capped values which was about 4%
 - Created features: 
   * Total rooms per Household
   * Total bedrooms per Household
   * Population per Household
+- After processing we are left with Dimensions: 19448 rows x 18 columns
 
 ## 4.) Data Visualization 
 - Used box plots, histograms, heatmaps, and geographical visualizations to gain insight on the data and understand correlation between features

@@ -30,6 +30,7 @@ In this project the following techniques were used:
     * And plotted a histogram for each non categorical feature to view its distribution 
     * Decided to remove rows for all null cells
     * Checked for duplicate rows
+ ![Alt text]( images/Distributions.png )
       
 ### Conclusions
 - Our "median_house_value" and "housing_median_age" appear to be capped at a limit, shown by the large spike/maximum towards the far right of the histogram
